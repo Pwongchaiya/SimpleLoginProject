@@ -29,6 +29,9 @@ public class LoginController {
     LoginApplication loginApplication = new LoginApplication();
     if (username.getText().equalsIgnoreCase("username") && password.getText().equalsIgnoreCase("123")) {
       loginApplication.changeScene("successfulLogin.fxml");
+      System.out.println("user logged in");
+    }else{
+      System.out.println("incorrect password");
     }
   }
 
